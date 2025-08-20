@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de equipos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="equipos.html">Tabla Equipos</a></li>
+            <li><a href="UsoEquipos.html">Tabla Uso De Equipos</a></li>
+            <li><a href="Usuarios.html">Tabla Usuarios</a></li>
+            <li><a href="Funcionarios.html">Tabla Funcionarios</a></li>
+            <li><a href="lotes.html">Tabla Lotes</a></li>
+            <li><a href="Reactivos.html">Tabla Reactivos</a></li>
+            <li><a href="plantas.html">Tabla Plantas</a></li>
+            <li><a href="Supervision_Plantas.html">Tabla Supervision Plantas</a></li>
+            <li><a href="Insumos.html">Tablas Insumos</a></li>
+        </ul>
+    </nav>
+    <h1>USO DE EQUIPOS</h1>
+    <div class="panel">
+        <h2>Diccionario de datos base de datos Biolab</h2>
+
+        <table>
+            <tr>
+                <th class="x" colspan="2">Nombre:</th>
+                <td colspan="2">Uso de Equipos</td>
+            </tr>
+            <tr>
+                <th class="x" colspan="2">Creación:</th>
+                <td colspan="2">02/08/2025</td>
+            </tr>
+            <tr>
+                <th class="x" colspan="2">Descripción:</th>
+                <td colspan="2">Usos De Equipos Del Laboratorio De Biotecnología Vegetal</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Tipo dato</th>
+                <th>Tamaño</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Id_Uso_Equipo</td>
+                <td>INT</td>
+                <td>10</td>
+                <td>Numero de identificacion unico para cada Equipos</td>
+            </tr>
+            <tr>
+                <td>Hora_Uso_Inicial</td>
+                <td>TIME</td>
+                <td>1</td>
+                <td>Registrar la hora en la que se inicia a utilizar el Equipo</td>
+            </tr>
+            <tr>
+                <td>Hora_Uso_Final</td>
+                <td>TIME</td>
+                <td>1</td>
+                <td>Registrar la hora en la que se finaliza la utilidad del Equipo</td>
+            </tr>
+            <tr>
+                <td>Actividad_Realizada</td>
+                <td>VARCHAR</td>
+                <td>100</td>
+                <td>Registrar actvidad se se realizo con los Equipos</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

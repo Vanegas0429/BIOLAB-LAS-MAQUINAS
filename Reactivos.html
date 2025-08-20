@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactivos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="equipos.html">Tabla Equipos</a></li>
+            <li><a href="UsoEquipos.html">Tabla Uso De Equipos</a></li>
+            <li><a href="Usuarios.html">Tabla Usuarios</a></li>
+            <li><a href="Funcionarios.html">Tabla Funcionarios</a></li>
+            <li><a href="lotes.html">Tabla Lotes</a></li>
+            <li><a href="Reactivos.html">Tabla Reactivos</a></li>
+            <li><a href="plantas.html">Tabla Plantas</a></li>
+            <li><a href="Supervision_Plantas.html">Tabla Supervision Plantas</a></li>
+            <li><a href="Insumos.html">Tablas Insumos</a></li>
+        </ul>
+    </nav>
+
+    <h1>REACTIVOS</h1>
+    <div class="panel">
+
+        <h2>Diccionario de datos base de datos Biolab</h2>
+
+        <table>
+            <tr>
+                <th class="x" colspan="2">Nombre:</th>
+                <td colspan="2">Reactivos</td>
+            </tr>
+            <tr>
+                <th class="x" colspan="2">Creación:</th>
+                <td colspan="2">02/08/2025</td>
+            </tr>
+            <tr>
+                <th class="x" colspan="2">Descripción:</th>
+                <td colspan="2">Reactivos Del Laboratorio De Biotecnología Vegetal</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Tipo dato</th>
+                <th>Tamaño</th>
+                <th>Descripción</th>
+            </tr>
+            <tr>
+                <td>Id_Reactivos</td>
+                <td>INT</td>
+                <td>10</td>
+                <td>Numero unico para identificar los insumos</td>
+            </tr>
+            <tr>
+                <td>Nombre_Reactivo</td>
+                <td>VARCHAR</td>
+                <td>400</td>
+                <td>Nombre del reactivo a registrar</td>
+            </tr>
+            <td>Nomenclatura</td>
+            <td>VARCHAR</td>
+            <td>20</td>
+            <td>Descripción estandarizada que identifica y detalla sus características esenciales, permitiendo asegurar
+                su uso correcto en el laboratorio.</td>
+            </tr>
+            <tr>
+                <td>Unidad_Medida</td>
+                <td>TEXT</td>
+                <td>15</td>
+                <td>Unidad en la que se mide el reactivo</td>
+            </tr>
+            <tr>
+                <td>Cantidad</td>
+                <td>INT</td>
+                <td>2</td>
+                <td>Cantidad de reactivos que ingresan</td>
+            </tr>
+            <tr>
+                <td>Presentacion</td>
+                <td>TEXT</td>
+                <td>25</td>
+                <td>Como viene preparado o empacado el reactivo para su uso o almacenamiento.</td>
+            </tr>
+            <tr>
+                <td>Concentracion</td>
+                <td>TEXT</td>
+                <td>5</td>
+                <td>Cantidad de sustancia activa presente en una mezcla o solución, en relación con el volumen o masa
+                    total.</td>
+            </tr>
+            <tr>
+                <td>Marca</td>
+                <td>TEXT</td>
+                <td>10</td>
+                <td>Marca del reactivo</td>
+            </tr>
+            <tr>
+                <td>Fecha_Vencimiento</td>
+                <td>DATE</td>
+                <td>1</td>
+                <td>Fecha de vencimiento del reactivo</td>
+            </tr>
+            <tr>
+                <td>Funcion_quimica</td>
+                <td>VARCHAR</td>
+                <td>100</td>
+                <td>para qué sirve y qué papel cumple en un proceso o experimento.</td>
+            </tr>
+            <tr>
+                <td>Estado_Fisico</td>
+                <td>ENUM</td>
+                <td>("Liquido", "Solido", "Gaseoso")</td>
+                <td>Estado en que se presenta la sustancia en condiciones normales de almacenamiento y uso</td>
+            </tr>
+            <tr>
+                <td>Naturaleza_Quimica</td>
+                <td>TEXT</td>
+                <td>15</td>
+                <td>Qué tipo de sustancia se trata según su composición y propiedades químicas</td>
+            </tr>
+            <tr>
+                <td>Clasificacion</td>
+                <td>TEXT</td>
+                <td>15</td>
+                <td>categorización que se le da según sus características químicas, su función en el laboratorio y/o su
+                    nivel de riesgo.</td>
+            </tr>
+            <tr>
+                <td>Peligrosidad</td>
+                <td>ENUM</td>
+                <td>("Baja", "Mediana", "Alta")</td>
+                <td>nivel de riesgo que representa para la salud humana, el medio ambiente o la seguridad en el
+                    laboratorio</td>
+            </tr>
+            <tr>
+                <td>Clase_Peligro</td>
+                <td>TEXT</td>
+                <td>30</td>
+                <td>tipo de riesgo principal que presenta</td>
+            </tr>
+            <tr>
+                <td>Ficha_Datos_Seguridad</td>
+                <td>VARCHAR</td>
+                <td>200</td>
+                <td>describe en detalle las propiedades, peligros, medidas de seguridad y procedimientos de manejo de un
+                    reactivo o sustancia química.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

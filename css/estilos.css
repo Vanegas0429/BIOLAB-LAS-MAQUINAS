@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: white;
+}
+
+.panel {
+  width: 95;
+  margin: auto;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+h2 {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.infor {
+  padding: 6px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: green;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.x {
+  background-color: white;
+  color: black;
+}
+
+.menu {
+  list-style: none;
+  padding: 30px;
+  text-align: center;
+  background-color: green;
+  margin: 0;
+  font-size: large;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: large;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  color: greenyellow
+}
+
+.img {
+  margin: auto;
+  text-align: center;
+}
