@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cassandra</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Apache Cassandra</h1>
+ <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index2.html">Gestor y Motor de BD</a></li>
+      <li>
+        <a href="#">Tablas BD</a>
+        <ul>
+          <li><a href="equipos.html">Equipos</a></li>
+          <li><a href="Funcionarios.html">Funcionarios</a></li>
+          <li><a href="Reactivos.html">Reactivos</a></li>
+          <li><a href="UsoEquipos.html">Uso de Equipos</a></li>
+          <li><a href="Usuarios.html">Usuarios</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BD Relacionales</a>
+        <ul>
+          <li><a href="mysql.html">MySQL</a></li>
+          <li><a href="postgresql.html">PostgreSQL</a></li>
+          <li><a href="oracle.html">Oracle</a></li>
+          <li><a href="sqlserver.html">SQL Server</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BD No Relacionales</a>
+        <ul>
+          <li><a href="mongodb.html">MongoDB</a></li>
+          <li><a href="redis.html">Redis</a></li>
+          <li><a href="cassandra.html">Cassandra</a></li>
+          <li><a href="neo4j.html">Neo4j</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Características</h2>
+            <ul>
+                <li>Base de datos NoSQL distribuida y altamente escalable.</li>
+                <li>Diseñada para manejar grandes volúmenes de datos.</li>
+                <li>Modelo de datos basado en columnas.</li>
+                <li>Alta disponibilidad sin punto único de fallo.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos CRUD</h2>
+            <pre>
+-- Crear
+CREATE TABLE usuarios (
+  id UUID PRIMARY KEY,
+  nombre TEXT,
+  edad INT
+);
+
+-- Consultar
+SELECT * FROM usuarios;
+
+-- Actualizar
+UPDATE usuarios SET edad = 30 WHERE id = 123e4567-e89b-12d3-a456-426614174000;
+
+-- Eliminar
+DELETE FROM usuarios WHERE id = 123e4567-e89b-12d3-a456-426614174000;
+      </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sitio de Bases de Datos</p>
+    </footer>
+</body>
+
+</html>

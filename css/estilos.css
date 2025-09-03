@@ -6,11 +6,16 @@ body {
 }
 
 .panel {
-  width: 95;
+  width: 95%;
   margin: auto;
   background-color: white;
   border: 1px solid white;
   border-radius: 6px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
   padding: 20px;
 }
 
@@ -52,45 +57,106 @@ th {
   color: white;
 }
 
-h1 {
-  text-align: center;
-  padding: 20px;
-}
-
 .x {
   background-color: white;
   color: black;
 }
 
-.menu {
-  list-style: none;
-  padding: 30px;
-  text-align: center;
-  background-color: green;
-  margin: 0;
-  font-size: large;
-}
-
-.menu li {
-  display: inline-block;
-  margin: 0 15px;
-  font-size: large;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: large;
-  text-align: center;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-  color: greenyellow
-}
-
-.img {
+main {
+  padding: 20px;
+  max-width: 900px;
   margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
   text-align: center;
+  background: green;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-top: 3px solid #0f172a;
+}
+
+nav {
+  background: green;
+  height: 70px;                 
+  display: flex;
+  justify-content: center;      
+  align-items: center;         
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  background: #142a0f;
+  border-radius: 5px;
+  color: white;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;       
+  left: 0;
+  background: green;
+  padding: 0;
+  min-width: 200px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+nav ul li ul li {
+  margin: 0;
+  width: 100%;
+}
+
+nav ul li ul li a {
+  font-size: 16px;
+  padding: 12px 18px;
+  display: block;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;      
+  margin-left: 2px;
+  border-radius: 5px;
+}
+
+nav ul li ul li:hover > ul {
+  display: block;
 }
