@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MongoDB</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>MongoDB</h1>
+<nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index2.html">Gestor y Motor de BD</a></li>
+      <li>
+        <a href="#">Tablas BD</a>
+        <ul>
+          <li><a href="equipos.html">Equipos</a></li>
+          <li><a href="Funcionarios.html">Funcionarios</a></li>
+          <li><a href="Reactivos.html">Reactivos</a></li>
+          <li><a href="UsoEquipos.html">Uso de Equipos</a></li>
+          <li><a href="Usuarios.html">Usuarios</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BD Relacionales</a>
+        <ul>
+          <li><a href="mysql.html">MySQL</a></li>
+          <li><a href="postgresql.html">PostgreSQL</a></li>
+          <li><a href="oracle.html">Oracle</a></li>
+          <li><a href="sqlserver.html">SQL Server</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BD No Relacionales</a>
+        <ul>
+          <li><a href="mongodb.html">MongoDB</a></li>
+          <li><a href="redis.html">Redis</a></li>
+          <li><a href="cassandra.html">Cassandra</a></li>
+          <li><a href="neo4j.html">Neo4j</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Características</h2>
+            <ul>
+                <li>Base de datos NoSQL orientada a documentos.</li>
+                <li>Utiliza JSON/BSON para almacenar datos flexibles.</li>
+                <li>Muy popular en aplicaciones web modernas.</li>
+                <li>Alta escalabilidad horizontal.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos CRUD</h2>
+            <pre>
+// Crear
+db.usuarios.insertOne({ nombre: "Ana", edad: 25 });
+
+// Consultar
+db.usuarios.find({});
+
+// Actualizar
+db.usuarios.updateOne({ nombre: "Ana" }, { $set: { edad: 26 } });
+
+// Eliminar
+db.usuarios.deleteOne({ nombre: "Ana" });
+      </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sitio de Bases de Datos</p>
+    </footer>
+</body>
+
+</html>

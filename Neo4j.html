@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Neo4j</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Neo4j</h1>
+<nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index2.html">Gestor y Motor de BD</a></li>
+      <li>
+        <a href="#">Tablas BD</a>
+        <ul>
+          <li><a href="equipos.html">Equipos</a></li>
+          <li><a href="Funcionarios.html">Funcionarios</a></li>
+          <li><a href="Reactivos.html">Reactivos</a></li>
+          <li><a href="UsoEquipos.html">Uso de Equipos</a></li>
+          <li><a href="Usuarios.html">Usuarios</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BD Relacionales</a>
+        <ul>
+          <li><a href="mysql.html">MySQL</a></li>
+          <li><a href="postgresql.html">PostgreSQL</a></li>
+          <li><a href="oracle.html">Oracle</a></li>
+          <li><a href="sqlserver.html">SQL Server</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">BD No Relacionales</a>
+        <ul>
+          <li><a href="mongodb.html">MongoDB</a></li>
+          <li><a href="redis.html">Redis</a></li>
+          <li><a href="cassandra.html">Cassandra</a></li>
+          <li><a href="neo4j.html">Neo4j</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Características</h2>
+            <ul>
+                <li>Base de datos NoSQL orientada a grafos.</li>
+                <li>Excelente para representar relaciones complejas.</li>
+                <li>Lenguaje de consulta propio llamado Cypher.</li>
+                <li>Usada en redes sociales, recomendaciones y análisis de grafos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ejemplos CRUD</h2>
+            <pre>
+// Crear
+CREATE (u:Usuario {nombre: "Laura", edad: 28});
+
+// Consultar
+MATCH (u:Usuario) RETURN u;
+
+// Actualizar
+MATCH (u:Usuario {nombre: "Laura"})
+SET u.edad = 29;
+
+// Eliminar
+MATCH (u:Usuario {nombre: "Laura"}) DELETE u;
+      </pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sitio de Bases de Datos</p>
+    </footer>
+</body>
+
+</html>
