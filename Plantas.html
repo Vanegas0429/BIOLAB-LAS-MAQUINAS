@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index2.html">Gestor y Motor de BD</a></li>
+            <li>
+                <a href="#">Tablas BD</a>
+                <ul>
+                    <li><a href="equipos.html">Equipos</a></li>
+                    <li><a href="Funcionarios.html">Funcionarios</a></li>
+                    <li><a href="Reactivos.html">Reactivos</a></li>
+                    <li><a href="UsoEquipos.html">Uso de Equipos</a></li>
+                    <li><a href="Usuarios.html">Usuarios</a></li>
+                    <li><a href="Enceres.html">Enceres</a></li>
+                    <li><a href="Insumos.html">Insumos</a></li>
+                    <li><a href="Lotes.html">Lotes</a></li>
+                    <li><a href="Plantas.html">Plantas</a></li>
+                    <li><a href="Supervision_Plantas.html">Supervision plantas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">BD Relacionales</a>
+                <ul>
+                    <li><a href="mysql.html">MySQL</a></li>
+                    <li><a href="postgresql.html">PostgreSQL</a></li>
+                    <li><a href="oracle.html">Oracle</a></li>
+                    <li><a href="sqlserver.html">SQL Server</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">BD No Relacionales</a>
+                <ul>
+                    <li><a href="mongodb.html">MongoDB</a></li>
+                    <li><a href="redis.html">Redis</a></li>
+                    <li><a href="cassandra.html">Cassandra</a></li>
+                    <li><a href="neo4j.html">Neo4j</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>PLANTAS</h1>
+    <div class="panel">
+        <h2>Diccionario de datos base de datos Biolab</h2>
+
+        <table>
+            <tr>
+                <th class="x" colspan="2">Nombre:</th>
+                <td colspan="2">Plantas</td>
+            </tr>
+            <tr>
+                <th class="x" colspan="2">Creación:</th>
+                <td colspan="2">06/08/2025</td>
+            </tr>
+            <tr>
+                <th class="x" colspan="2">Descripción:</th>
+                <td colspan="2">Plantas Del Laboratorio De Biotecnologia Vegetal</td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>Campo</th>
+                <th>Tipo dato</th>
+                <th>Tamaño</th>
+                <th>Descripcion</th>
+            </tr>
+            <tr>
+                <td>ID_Planta</td>
+                <td>INT</td>
+                <td>1</td>
+                <td>Codigo unico de las plantas</td>
+            </tr>
+            <tr>
+                <td>Especie</td>
+                <td>VARCHAR</td>
+                <td>20</td>
+                <td>Registrar la especie de planta</td>
+            </tr>
+            <tr>
+                <td>Lote</td>
+                <td>INT</td>
+                <td>1</td>
+                <td>Registrar el codigo unico del lote donde se encuentra la planta</td>
+            </tr>
+            <tr>
+                <td>Metodo_Cultivo</td>
+                <td>VARCHAR</td>
+                <td>50</td>
+                <td>Registrar como se cultiva la planta</td>
+            </tr>
+            <tr>
+                <td>Metodo_Propagacion</td>
+                <td>VARCHAR</td>
+                <td>50</td>
+                <td>Registrar metodo de propagacion de la planta</td>
+            </tr>
+            <tr>
+                <td>Numero_Frasco</td>
+                <td>INT</td>
+                <td>1</td>
+                <td>Registrar el codigo unico de frasco donde esta la planta</td>
+            </tr>
+            <tr>
+                <td>Frascos_Contaminados</td>
+                <td>ENUM</td>
+                <td>15</td>
+                <td>Bacterias/Hongos</td>
+            </tr>
+            <tr>
+                <td>Frascos_Desarrollados</td>
+                <td>ENUM</td>
+                <td>40</td>
+                <td>Con Desarrollo/Sin Desarrollo</td>
+            </tr>
+            <tr>
+                <td>Numero_Endurecimiento</td>
+                <td>INT</td>
+                <td>20</td>
+                <td>Registrar valor de resistencia de la planta</td>
+            </tr>
+            <tr>
+                <td>Planta_Contaminada</td>
+                <td>ENUM</td>
+                <td>("Bacterias", "Hongos")</td>
+                <td>Tipo de Contaminacion que tiene la planta.</td>
+            </tr>
+            <tr>
+                <td>Planta_Desarrollada</td>
+                <td>ENUM</td>
+                <td>("Con desarrollo", "Sin desarrollo")</td>
+                <td>Estado de desarrollo de la planta.</td>
+            </tr>
+        </table>
+        <div class="img">
+            <h1>MODELO ENTIDAD RELACION Frascos_Plantas</h1>
+            <img src="IMG/Frascos_Plantas.png" id="alinear">
+
+            <h1>MODELO ENTIDAD RELACION Lotes_Plantas</h1>
+            <img src="IMG/Lotes_Plantas.jpg">
+        </div>
+</body>
+
+</html>
