@@ -160,3 +160,13 @@ nav ul li ul li ul {
 nav ul li ul li:hover > ul {
   display: block;
 }
+
+.imagen {
+  text-align: center;
+  width: 1100px;
+  height: 700px;
+  border: solid green;
+  align-self: auto;
+  margin-top: 90px;
+
+}
