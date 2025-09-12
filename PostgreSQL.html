@@ -65,7 +65,12 @@
     <section>
       <h2>Ejemplos CRUD</h2>
       <pre>
--- Crear
+-- Insertar registro
+INSERT INTO usuarios (nombre, correo)
+VALUES ('Juan Pérez', 'juan@example.com')
+RETURNING id;
+
+-- Crear tabla
 CREATE TABLE empleados (
   id SERIAL PRIMARY KEY,
   nombre VARCHAR(100),
