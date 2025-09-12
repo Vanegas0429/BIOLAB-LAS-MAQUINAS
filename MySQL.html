@@ -2,70 +2,74 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <title>MySQL</title>
-    <link rel="stylesheet" href="css/misEstilos.css">
+  <meta charset="UTF-8">
+  <title>MySQL</title>
+  <link rel="stylesheet" href="css/misEstilos.css">
 </head>
 
 <body>
-    <header>
-        <h1>MySQL</h1>
-<nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="index2.html">Gestor y Motor de BD</a></li>
-      <li>
-        <a href="#">Tablas BD</a>
-        <ul>
-          <li><a href="equipos.html">Equipos</a></li>
-          <li><a href="Funcionarios.html">Funcionarios</a></li>
-          <li><a href="Reactivos.html">Reactivos</a></li>
-          <li><a href="UsoEquipos.html">Uso de Equipos</a></li>
-          <li><a href="Usuarios.html">Usuarios</a></li>
-          <li><a href="Enceres.html">Enceres</a></li>
-          <li><a href="Insumos.html">Insumos</a></li>
-          <li><a href="Lotes.html">Lotes</a></li>
-          <li><a href="Plantas.html">Plantas</a></li>
-          <li><a href="Supervision_Plantas.html">Supervision plantas</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">BD Relacionales</a>
-        <ul>
-          <li><a href="mysql.html">MySQL</a></li>
-          <li><a href="postgresql.html">PostgreSQL</a></li>
-          <li><a href="oracle.html">Oracle</a></li>
-          <li><a href="sqlserver.html">SQL Server</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">BD No Relacionales</a>
-        <ul>
-          <li><a href="mongodb.html">MongoDB</a></li>
-          <li><a href="redis.html">Redis</a></li>
-          <li><a href="cassandra.html">Cassandra</a></li>
-          <li><a href="neo4j.html">Neo4j</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-    </header>
+  <header>
+    <h1>MySQL</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index2.html">Gestor y Motor de BD</a></li>
+        <li>
+          <a href="#">Tablas BD</a>
+          <ul>
+            <li><a href="equipos.html">Equipos</a></li>
+            <li><a href="Funcionarios.html">Funcionarios</a></li>
+            <li><a href="Reactivos.html">Reactivos</a></li>
+            <li><a href="UsoEquipos.html">Uso de Equipos</a></li>
+            <li><a href="Usuarios.html">Usuarios</a></li>
+            <li><a href="Enceres.html">Enceres</a></li>
+            <li><a href="Insumos.html">Insumos</a></li>
+            <li><a href="Lotes.html">Lotes</a></li>
+            <li><a href="Plantas.html">Plantas</a></li>
+            <li><a href="Supervision_Plantas.html">Supervision plantas</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BD Relacionales</a>
+          <ul>
+            <li><a href="mysql.html">MySQL</a></li>
+            <li><a href="postgresql.html">PostgreSQL</a></li>
+            <li><a href="oracle.html">Oracle</a></li>
+            <li><a href="sqlserver.html">SQL Server</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">BD No Relacionales</a>
+          <ul>
+            <li><a href="mongodb.html">MongoDB</a></li>
+            <li><a href="redis.html">Redis</a></li>
+            <li><a href="cassandra.html">Cassandra</a></li>
+            <li><a href="neo4j.html">Neo4j</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section>
-            <h2>Características</h2>
-            <ul>
-                <li>Base de datos relacional de código abierto.</li>
-                <li>Compatible con SQL estándar.</li>
-                <li>Muy usada en aplicaciones web.</li>
-                <li>Escalable y multiplataforma.</li>
-            </ul>
-        </section>
+  <main>
+    <section>
+      <h2>Características</h2>
+      <ul>
+        <li>Base de datos relacional de código abierto.</li>
+        <li>Compatible con SQL estándar.</li>
+        <li>Muy usada en aplicaciones web.</li>
+        <li>Escalable y multiplataforma.</li>
+      </ul>
+    </section>
 
-        <section>
-            <h2>Ejemplos CRUD</h2>
-            <pre>
--- Crear
+    <section>
+      <h2>Ejemplos CRUD</h2>
+      <pre>
+-- Insertar registro        
+INSERT INTO usuarios (id, nombre, correo)
+VALUES (1, 'Juan Pérez', 'juan@example.com');
+
+-- Crear tabla
 CREATE TABLE usuarios (
   id INT AUTO_INCREMENT PRIMARY KEY,
   nombre VARCHAR(100),
@@ -81,12 +85,12 @@ UPDATE usuarios SET nombre='Carlos' WHERE id=1;
 -- Eliminar
 DELETE FROM usuarios WHERE id=1;
       </pre>
-        </section>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Sitio de Bases de Datos</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Sitio de Bases de Datos</p>
+  </footer>
 </body>
 
 </html>

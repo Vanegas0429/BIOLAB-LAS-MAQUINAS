@@ -64,7 +64,11 @@
         <section>
             <h2>Ejemplos CRUD</h2>
             <pre>
--- Crear
+-- Insertar registro
+INSERT INTO usuarios (nombre, correo)
+VALUES ('Juan Pérez', 'juan@example.com');
+
+-- Crear tabla
 CREATE TABLE productos (
   id INT IDENTITY(1,1) PRIMARY KEY,
   nombre NVARCHAR(100),

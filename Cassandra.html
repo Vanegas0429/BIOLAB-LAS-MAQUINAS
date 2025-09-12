@@ -65,7 +65,11 @@
         <section>
             <h2>Ejemplos CRUD</h2>
             <pre>
--- Crear
+-- Insertar registro
+INSERT INTO usuarios (id, nombre, correo)
+VALUES (uuid(), 'Juan Pérez', 'juan@example.com');
+
+-- Crear tabla
 CREATE TABLE usuarios (
   id UUID PRIMARY KEY,
   nombre TEXT,
