@@ -170,3 +170,14 @@ nav ul li ul li:hover > ul {
   margin-top: 10px;
 
 }
+
+.img {
+  text-align: center;
+}
+
+.imgMockup {
+  text-align: center;
+  width: 850px;
+  height: 700px;
+  margin-top: 0%;
+}
