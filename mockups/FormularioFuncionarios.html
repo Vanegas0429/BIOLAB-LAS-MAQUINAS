@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redis</title>
-    <link rel="stylesheet" href="css/misEstilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-
 <body>
-    <header>
-        <h1>Redis</h1>
 <nav>
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -65,44 +62,10 @@
     </ul>
     </ul>
   </nav>
-    </header>
+    <h1>PROTOTIPO FORMULARIO FUNCIONARIOS</h1>
+    <div style="text-align: center;">
+        <img src="../IMG/Reg_funcionario.png" class="imgMockup">
+    </div>
 
-    <main>
-        <section>
-            <h2>Características</h2>
-            <ul>
-                <li>Base de datos NoSQL en memoria, clave-valor.</li>
-                <li>Muy rápida para cachés y sesiones de usuario.</li>
-                <li>Soporta estructuras como listas, conjuntos y hashes.</li>
-                <li>Ideal para tiempo real y alta velocidad.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Ejemplos CRUD</h2>
-            <pre>
-# Insertar registro
-SET usuario:1 "Juan Pérez"
-HSET usuario:1 nombre "Juan Pérez" correo "juan@example.com"
-
-# Crear tabla
-SET usuario:1 "Pedro"
-
-# Consultar
-GET usuario:1
-
-# Actualizar
-SET usuario:1 "Pedro Gómez"
-
-# Eliminar
-DEL usuario:1
-      </pre>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Sitio de Bases de Datos</p>
-    </footer>
 </body>
-
 </html>
