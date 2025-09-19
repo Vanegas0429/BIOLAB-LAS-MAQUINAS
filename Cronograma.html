@@ -2,11 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insumos</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 
 <body>
 <nav>
@@ -27,7 +28,6 @@
           <li><a href="Supervision_Plantas.html">Supervision plantas</a></li>
           <li><a href="Cronograma.html">Cronograma</a></li>
           <li><a href="FichaTecnica.html">Ficha Tecnica</a></li>
-          
         </ul>
       </li>
       <li>
@@ -69,65 +69,75 @@
     </ul>
     </ul>
   </nav>
-    <h1>INSUMOS</h1>
-    <div class="panel">
-        <h2>Diccionario de datos base de datos Biolab</h2>
+  <h1>CRONOGRAMA</h1>
+  <div class="panel">
+    <h2>Diccionario de datos base de datos Biolab</h2>
 
-        <table>
-            <tr>
-                <th class="x" colspan="2">Nombre:</th>
-                <td colspan="2">Insumos</td>
-            </tr>
-            <tr>
-                <th class="x" colspan="2">Creación:</th>
-                <td colspan="2">06/08/2025</td>
-            </tr>
-            <tr>
-                <th class="x" colspan="2">Descripción:</th>
-                <td colspan="2">Insumos Del Laboratorio De Biotecnologia Vegetal</td>
-            </tr>
-        </table>
+    <table>
+      <tr>
+        <th class="x" colspan="2">Nombre:</th>
+        <td colspan="2">Equipos</td>
+      </tr>
+      <tr>
+        <th class="x" colspan="2">Creación:</th>
+        <td colspan="2">02/08/2025</td>
+      </tr>
+      <tr>
+        <th class="x" colspan="2">Descripción:</th>
+        <td colspan="2">Equipos del Laboratorio de Biotecnología Vegetal</td>
+      </tr>
+    </table>
 
-        <table>
-            <tr>
-                <th>Campo</th>
-                <th>Tipo dato</th>
-                <th>Tamaño</th>
-                <th>Descripcion</th>
-            </tr>
-            <tr>
-                <td>ID_Insumo</td>
-                <td>INT</td>
-                <td>10</td>
-                <td>Código único que representa o tiene asignado cada Insumo</td>
-            </tr>
-            <tr>
-                <td>Nombre_Insumo</td>
-                <td>VARCHAR</td>
-                <td>20</td>
-                <td>Nombre del insumo que se resgistra</td>
-            </tr>
-            <tr>
-                <td>Tipo_Insumo</td>
-                <td>VARCHAR</td>
-                <td>20</td>
-                <td>Registro del tipo de insumo que se registra</td>
-            </tr>
-            <tr>
-                <td>Responsable</td>
-                <td>VARCHAR</td>
-                <td>30</td>
-                <td>responsanle que registra el insumo</td>
-            </tr>
-            <tr>
-                <td>Fecha</td>
-                <td>DATE</td>
-                <td>1</td>
-                <td>Fecha en la que se registra el insumo</td>
-            </tr>
-        </table>
-        <div>
-        </div>
+    <table>
+      <tr>
+        <th>Campo</th>
+        <th>Tipo dato</th>
+        <th>Tamaño</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>Id_Cronograma</td>
+        <td>INT</td>
+        <td>10</td>
+        <td>Numero de identificacion unico para cada prestamo del laboratorio</td>
+      </tr>
+      <tr>
+        <td>Fecha</td>
+        <td>DATE</td>
+        <td>1</td>
+        <td>Fecha en la que se presta el laboratorio</td>
+      </tr>
+      <tr>
+        <td>ID_Funcionario</td>
+        <td>INT</td>
+        <td>10</td>
+        <td>Numero de identificacion del intructor responsable</td>
+      </tr>
+      <tr>
+        <td>Num_Ficha</td>
+        <td>INT</td>
+        <td>10</td>
+        <td>Nummero de la ficha a la que se le presta el laboratorio</td>
+      </tr>
+      <tr>
+        <td>Can_Aprendices</td>
+        <td>INT</td>
+        <td>2</td>
+        <td>Cantidad de aprendices que van a ingresar al laboratorio</td>
+      </tr>
+      <tr>
+        <td>Act_Realizada</td>
+        <td>VARCHAR</td>
+        <td>100</td>
+        <td>Descripcion de la actvidad que se realizo en el laboratorio</td>
+      </tr>
+      <tr>
+        <td>Id_FichaTecnica</td>
+        <td>VARCHAR</td>
+        <td>10</td>
+        <td>Codigo unico de cada ficha tecnica de los equipos que utilizan</td>
+      </tr>
+    </table>
 </body>
 
 </html>
