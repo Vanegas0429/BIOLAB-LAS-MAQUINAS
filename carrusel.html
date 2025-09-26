@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>PostgreSQL</title>
-  <link rel="stylesheet" href="css/misEstilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
-  <header>
-    <h1>PostgreSQL</h1>
 <nav>
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -70,49 +73,38 @@
     </ul>
     </ul>
   </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Características</h2>
-      <ul>
-        <li>Base de datos relacional y objeto-relacional.</li>
-        <li>Muy robusta y estándar SQL.</li>
-        <li>Extensible con funciones personalizadas.</li>
-        <li>Excelente manejo de transacciones ACID.</li>
-      </ul>
-    </section>
+    <h1>INFORMACION DE LOS DESARROLLADORES DE BIOLAB</h1>
+    <div class="container">
 
-    <section>
-      <h2>Ejemplos CRUD</h2>
-      <pre>
--- Insertar registro
-INSERT INTO usuarios (nombre, correo)
-VALUES ('Juan Pérez', 'juan@example.com')
-RETURNING id;
 
--- Crear tabla
-CREATE TABLE empleados (
-  id SERIAL PRIMARY KEY,
-  nombre VARCHAR(100),
-  puesto VARCHAR(100)
-);
+        <div id="carouselExample" class="carousel slide carousel-margin">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="IMG/vanegas.jpg" height="600px" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/sierra.jpg" height="600px" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/riobo.jpg" height="600px" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG/mellado.jpg" height="600px" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
--- Consultar
-SELECT * FROM empleados;
+    </div>
 
--- Actualizar
-UPDATE empleados SET puesto='Gerente' WHERE id=1;
-
--- Eliminar
-DELETE FROM empleados WHERE id=1;
-      </pre>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Sitio de Bases de Datos</p>
-  </footer>
 </body>
 
 </html>
